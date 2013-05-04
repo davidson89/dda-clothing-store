@@ -1,4 +1,4 @@
-package DDA;
+package dda.clothing.store;
 
 import jmine.tec.web.wicket.application.JMineWicketWebApplication;
 import jmine.tec.web.wicket.pages.main.Home;

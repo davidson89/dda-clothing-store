@@ -1,4 +1,4 @@
-package DDA;
+package dda.clothing.store;
 
 import java.security.Principal;
 import java.util.Collections;

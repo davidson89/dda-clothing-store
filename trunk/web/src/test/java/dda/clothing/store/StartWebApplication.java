@@ -1,4 +1,4 @@
-package DDA;
+package dda.clothing.store;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
