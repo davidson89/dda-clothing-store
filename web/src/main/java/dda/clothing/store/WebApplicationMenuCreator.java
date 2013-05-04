@@ -1,4 +1,4 @@
-package DDA;
+package dda.clothing.store;
 
 import DDA.pages.AlterarSenhaPage;
 import DDA.pages.CrudUsuarioPage;

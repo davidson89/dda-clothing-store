@@ -1,4 +1,4 @@
-package DDA;
+package dda.clothing.store;
 
 import bancosys.tec.exception.LocalizedMessageHolder;
 import bancosys.tec.exception.MessageCreator;

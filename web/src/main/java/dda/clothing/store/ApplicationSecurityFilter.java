@@ -1,4 +1,4 @@
-package DDA;
+package dda.clothing.store;
 
 import java.io.IOException;
 import java.util.Collection;
