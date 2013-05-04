@@ -1,4 +1,6 @@
 target
 .profile
 .class
-
+.classpath
+.project
+.settings
