@@ -102,9 +102,9 @@
                 <driverClassName>org.postgresql.Driver</driverClassName>
                 <hibernateDialect>org.hibernate.dialect.PostgreSQLDialect</hibernateDialect>
                 <schemaDialect>jmine.tec.persist.schema.impl.dialects.PostgreSQLDialect</schemaDialect>
-                <databaseUrl>jdbc:postgresql://localhost:5432/jmine</databaseUrl>
-                <username>jmine</username>
-                <password>jmine</password>
+                <databaseUrl>jdbc:postgresql://localhost:5432/clothing-store</databaseUrl>
+                <username>DDA</username>
+                <password>DDA</password>
             </properties>
 
             <dependencies>
