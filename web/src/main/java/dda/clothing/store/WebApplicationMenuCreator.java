@@ -7,6 +7,7 @@ import jmine.tec.persist.web.pages.audit.ConsultaTrilhaAuditoria;
 import jmine.tec.persist.web.pages.auth.Authorization;
 import jmine.tec.rtm.impl.web.pages.ConsultaExceptionRecord;
 import jmine.tec.rtm.impl.web.pages.diagnosticador.ConsultaDiagnosticador;
+import jmine.tec.security.impl.web.pages.grupousuario.PesquisaGroup;
 
 import jmine.tec.web.wicket.component.menu.cfg.AbstractMenuConfigFactoryBean;
 import jmine.tec.web.wicket.component.menu.cfg.MenuConfig;
@@ -33,7 +34,7 @@ public class WebApplicationMenuCreator extends AbstractMenuConfigFactoryBean {
         config.addPage(Importacao.class, "Infra", "Importacao");
         config.addPage(AlterarSenhaPage.class, "Infra", "Alterar senha");
         config.addPage(CrudUsuarioPage.class, "Infra", "Controle de acesso");
-        
+        config.addPage(PesquisaGroup.class, "Infra", "Grupos de Usuário");
         return config;
     }
 
