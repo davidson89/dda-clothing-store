@@ -28,6 +28,10 @@
         </dependency>
         <dependency>
             <groupId>jmine.tec</groupId>
+            <artifactId>jmine-tec-test-runner</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>jmine.tec</groupId>
             <artifactId>jmine-tec-test</artifactId>
             <scope>test</scope>
         </dependency>
