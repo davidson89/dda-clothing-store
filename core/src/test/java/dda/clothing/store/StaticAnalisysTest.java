@@ -34,16 +34,6 @@ public class StaticAnalisysTest extends AbstractBOStaticAnalysisTest {
      */
     @Override
     protected String[] getResourcesBaseReferencia() {
-        return new String[]{};
+        return new String[] {"core-db.xml"};
     }
-    
-
-    /**
-     * @return boolean
-     */
-    @Override
-    protected boolean failOnSchemaWarnings() {
-        return false;
-    }
-    
 }
