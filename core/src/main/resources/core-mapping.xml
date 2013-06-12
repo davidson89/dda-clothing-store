@@ -16,7 +16,9 @@
                 <value type="java.lang.Class">bancosys.tec.persist.audit.domain.AuditValuedProperty</value>
                 <value type="java.lang.Class">bancosys.tec.persist.audit.domain.AuditVersion</value>
                 <value type="java.lang.Class">bancosys.tec.persist.audit.domain.AuditEntity</value>
-                <value type="java.lang.Class">dda.clothing.store.domain.Agente</value>
+                <value type="java.lang.Class">dda.clothing.store.domain.pessoa.Fornecedor</value>
+                <value type="java.lang.Class">dda.clothing.store.domain.pessoa.Cliente</value>
+                <value type="java.lang.Class">dda.clothing.store.domain.pessoa.Funcionario</value>
             </list>
         </property>
         <property name="packageToScan" value="dda.clothing.store" />

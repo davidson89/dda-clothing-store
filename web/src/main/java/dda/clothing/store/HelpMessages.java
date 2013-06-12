@@ -10,7 +10,9 @@ import bancosys.tec.exception.MessageCreatorHelper;
  */
 public enum HelpMessages implements MessageCreator {
     CONTROLE_ACESSO(0, "infra.acesso.help"),
-    ALTERAR_SENHA(0, "infra.alterar_senha.help");
+    ALTERAR_SENHA(0, "infra.alterar_senha.help"),
+    PESQUISA_AGENTE(0, "dda.clothing.store.pages.pessoa.AbstractPesquisaAgente"),
+    CADASTRO_AGENTE(0, "dda.clothing.store.pages.pessoa.AbstractCadastroAgente");;
 
     private final MessageCreator delegate;
 
