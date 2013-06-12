@@ -2,6 +2,7 @@ package dda.clothing.store;
 
 import dda.clothing.store.pages.AlterarSenhaPage;
 import dda.clothing.store.pages.CrudUsuarioPage;
+import dda.clothing.store.pages.pessoa.cliente.PesquisaCliente;
 import jmine.tec.datadigester.web.pages.importacao.Importacao;
 import jmine.tec.persist.web.pages.audit.ConsultaTrilhaAuditoria;
 import jmine.tec.persist.web.pages.auth.Authorization;
@@ -35,6 +36,7 @@ public class WebApplicationMenuCreator extends AbstractMenuConfigFactoryBean {
         config.addPage(AlterarSenhaPage.class, "Infra", "Alterar senha");
         config.addPage(CrudUsuarioPage.class, "Infra", "Controle de acesso");
         config.addPage(PesquisaGroup.class, "Infra", "Grupos de Usuário");
+        config.addPage(PesquisaCliente.class, "Base", "Pessoa", "Cliente");
         return config;
     }
 

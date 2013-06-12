@@ -1,15 +1,18 @@
-package dda.clothing.store.domain;
+package dda.clothing.store.domain.pessoa;
 
 import javax.persistence.Column;
+import javax.persistence.DiscriminatorColumn;
+import javax.persistence.DiscriminatorType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import jmine.tec.persist.annotation.Alias;
+
 import org.hibernate.validator.NotNull;
 
-import jmine.tec.persist.annotation.Alias;
 import bancosys.tec.component.Documentation;
 import bancosys.tec.persist.bussobj.PersistableBusinessObject;
 import bancosys.tec.persist.persister.annotation.NaturalKey;
@@ -17,15 +20,16 @@ import bancosys.tec.persist.persister.annotation.NaturalKey;
 @Entity
 @Alias("AGENT")
 @Table(name = "AGENTE")
+@DiscriminatorColumn(name = "TP", discriminatorType = DiscriminatorType.INTEGER)
 @Documentation("ARMAZENA O CONTEUDO DO AGENTE")
 @SequenceGenerator(name = "SEQ_AGENT", sequenceName = "SEQ_AGENT")
-public class Agente extends PersistableBusinessObject {
+public abstract class Agente extends PersistableBusinessObject {
 	
 	private Long id;
 
 	private String mnemonico;
 	
-	private String cpfCnpg;
+	private String cpfCnpj;
 	
 	private String logradouro;
 	
@@ -34,6 +38,24 @@ public class Agente extends PersistableBusinessObject {
 	private String uf;
 	
 	private String telefone;
+	
+	private String email;
+
+	/**
+	 * @return the email
+	 */
+    @Documentation("E-MAIL DO AGENTE")
+    @Column(name="EMAIL", length=30)
+	public String getEmail() {
+		return email;
+	}
+
+	/**
+	 * @param email the email to set
+	 */
+	public void setEmail(String email) {
+		this.email = email;
+	}
 
 	/**
 	 * @return the id
@@ -73,20 +95,20 @@ public class Agente extends PersistableBusinessObject {
 	}
 
 	/**
-	 * @return the cpfCnpg
+	 * @return the cpfCnpj
 	 */
 	@NotNull
     @Documentation("CPF OU CNPJ DO AGENTE")
     @Column(name="CPF_CNPJ", length=15)
-	public String getCpfCnpg() {
-		return cpfCnpg;
+	public String getCpfCnpj() {
+		return cpfCnpj;
 	}
 
 	/**
-	 * @param cpfCnpg the cpfCnpg to set
+	 * @param cpfCnpj the cpfCnpg to set
 	 */
-	public void setCpfCnpg(String cpfCnpg) {
-		this.cpfCnpg = cpfCnpg;
+	public void setCpfCnpj(String cpfCnpj) {
+		this.cpfCnpj = cpfCnpj;
 	}
 
 	/**
